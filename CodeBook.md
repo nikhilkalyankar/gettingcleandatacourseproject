@@ -13,9 +13,8 @@ Activity: factor vector that contains mergeY data that has been labelled with al
 
 subjectX: takes input from read.table and saves data from subject_train.txt
 subjectY: takes input from read.table and saves data from subject_test.txt
-mergeSubject: contains data obtained by row binding (using 'rbind' function) subjectX and subjectY
-colnames function adds column name as Subject (this operation in not required if the variable mergeSubject was instead called as Subject)
+Subject: contains data obtained by row binding (using 'rbind' function) subjectX and subjectY
 
-data <- contains data obtained by column binding (using cbind function) mergeSubject,Activity and mergeX variables
-
+data <- contains data obtained by column binding (using cbind function) Subject,Activity and mergeX variables
+result <- contains data obtained by grouping and summarizing the value columns of 'data' 
 write.table function writes the 'tidydata.txt'
